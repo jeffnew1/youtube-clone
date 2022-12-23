@@ -24,11 +24,13 @@ const ChannelDetail = () => {
     <Box minHeight='95vh'>
       <Box>
         <div style={{
-          background: 'linear-gradient(45deg, rgba(72,76,237,1) 0%, rgba(55,181,233,1)      70%)', zIndex:10, height: '300px'}} />
+          background: 'linear-gradient(45deg, rgba(72,76,237,1) 0%, rgba(55,181,233,1) 70%)', zIndex:10, height: '300px'}} />
         <ChannelCard channelDetail={channelDetail} marginTop='-110px' />
       </Box>
-      <Box display='flex' p='2'>
-          <Box sx={{mr: {sm: '100px'}}} />
+      <Box sx={{
+        width: 'min(97%, 1200px)',
+        margin: '0 auto'
+      }}>
           <Videos videos={videos}/>
       </Box>
     </Box>

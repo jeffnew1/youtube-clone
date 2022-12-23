@@ -4,12 +4,8 @@ import { categories } from '../utils/constant'
 
 const Sidebar = ({selectedCategory, setSelectedCategory}) => (
     <Stack
-        direction= 'row'
-        sx = {{
-            overflowY: 'auto',
-            height: {sx: 'auto', md: '95%'},
-            flexDirection: {md: 'column'}
-        }}
+        direction={{xs: 'row', md: 'column'}}
+        sx={{height:{sx: 'auto', md:'95%'}, overflow: 'auto'}}
     >
         {categories.map(category => (
             <button 
